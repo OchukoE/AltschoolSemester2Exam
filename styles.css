@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#2e71af, #84a6c6);
+    color: #e4eef3;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2e71af;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #2e71af; /* Updated background color */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Optional: for separation from content */
+}
+
+nav a {
+    color: white; /* Text color */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover
+nav a.active{
+    color: cornsilk;
+    border-bottom: 3px solid white;
+    background-color: #f4f4f4; /* Hover background color */
+    color: #0056b3; /* Hover text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    height: 38px;
+}
+
+input[type="submit"] {
+    background-color: #2e71af;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4184ff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+/* Image and Media Styling */
+picture {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+video,
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+.top-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.top-link:hover {
+    background-color: #f4f4f4;
+    color: #0056b3;
+}
+
+a {
+    color: #e4eef3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e71af;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 360px) {
+    form {
+        width: 95%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        width: calc(100% - 18px);
+    }
+}
